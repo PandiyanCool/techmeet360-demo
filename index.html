@@ -16,7 +16,7 @@
 
     <script>
         (async function () {
-            let { text } = await (await fetch(`/api/message?name=suhas`)).json();
+            let { text } = await (await fetch(`/api/HttpTrigger?name=suhas`)).json();
             document.querySelector('#name').textContent = text;
         }())
     </script>
